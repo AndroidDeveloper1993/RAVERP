@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="MissingDefaultResource">
+
+<data>
+    <variable
+        name="customerListModel"
+        type="com.rav.raverp.data.model.api.CustomerListModel" />
+</data>
+
+<androidx.appcompat.widget.LinearLayoutCompat
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:orientation="vertical">
+
+<androidx.appcompat.widget.LinearLayoutCompat
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/selectableItemBackground"
+    android:paddingLeft="@dimen/_9sdp"
+    android:paddingTop="@dimen/_9sdp"
+    android:paddingRight="@dimen/_9sdp"
+    android:paddingBottom="@dimen/_9sdp">
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_vertical"
+       android:layout_weight="0.5">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/googlesans_regular"
+            android:text="Sr. No."
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            android:textColor="@color/black_900"
+            android:textSize="@dimen/_13sdp"
+            android:layout_gravity="center_vertical"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_7sdp"
+            android:fontFamily="@font/googlesans_regular"
+            tools:text="1"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textColor="@color/black_600"
+            android:textSize="@dimen/_13sdp"
+            android:textStyle="bold"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:id="@+id/sno"
+            android:layout_gravity="center_vertical" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1.4">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/googlesans_regular"
+            tools:text="Name"
+            android:text="@{customerListModel.strName}"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            android:textColor="@color/black_900"
+            android:textSize="@dimen/_13sdp"
+            android:layout_gravity="center_vertical"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_7sdp"
+            android:fontFamily="@font/googlesans_regular"
+            tools:text="Customer Id"
+            android:text="@{customerListModel.strCustId}"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textColor="@color/black_600"
+            android:textSize="@dimen/_13sdp"
+            android:layout_gravity="center_vertical" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="0.6">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/googlesans_regular"
+            tools:text="Contact No"
+            android:textColor="@color/black"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textSize="@dimen/_12sdp"
+            android:text="@{customerListModel.strMobileNo}"
+            android:layout_marginStart="@dimen/_3sdp"
+            android:layout_marginLeft="@dimen/_3sdp"
+            android:layout_gravity="end|center" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/show_more_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_3sdp"
+            android:layout_marginLeft="@dimen/_3sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:fontFamily="@font/googlesans_medium"
+            android:text="@string/action_show_more"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="#FF9157"
+            android:textSize="@dimen/_12sdp"
+            android:layout_gravity="end|center" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:background="@color/background"/>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
+
+    </layout>

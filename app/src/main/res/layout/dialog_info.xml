@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="title"
+            type="String" />
+
+        <variable
+            name="message"
+            type="String" />
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        style="@style/DialogCardViewStyle"
+        app:cardUseCompatPadding="false"
+        app:cardPreventCornerOverlap="false">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@{title}"
+                android:textSize="@dimen/_15sdp"
+                android:textColor="@color/black_800"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:fontFamily="@font/poppins_medium"
+                android:textAppearance="@style/TextAppearance.AppCompat.Title"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@{message}"
+                android:textSize="@dimen/_13sdp"
+                android:lineSpacingExtra="@dimen/_4sdp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:fontFamily="@font/poppins_regular"
+                android:textColor="@color/black_800"
+                android:gravity="center|start"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/ok_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/dialog_action_ok"
+                android:textAppearance="@style/TextAppearance.AppCompat.Button"
+                android:textSize="@dimen/_13sdp"
+                android:fontFamily="@font/poppins_medium"
+                android:textColor="@color/colorAccent"
+                android:gravity="end"
+                android:layout_marginBottom="@dimen/_7sdp"
+                android:layout_marginRight="@dimen/_9sdp"
+                android:layout_marginEnd="@dimen/_9sdp" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.cardview.widget.CardView>
+
+</layout>

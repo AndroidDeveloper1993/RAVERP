@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="message"
+            type="String" />
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        style="@style/DialogCardViewStyle"
+        app:cardUseCompatPadding="false"
+        app:cardPreventCornerOverlap="false">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="@string/msg_dialog_logout"
+                android:text="@{message}"
+                android:textSize="@dimen/_13sdp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:fontFamily="@font/poppins_regular"
+                android:textColor="@color/black_900"
+                android:gravity="center"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"/>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="end"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:layout_marginLeft="@dimen/_9sdp"
+                android:layout_marginStart="@dimen/_9sdp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/no_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/action_dialog_no"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Button"
+                    android:textAllCaps="true"
+                    android:textSize="@dimen/_12sdp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textColor="#999999"
+                    android:gravity="end"
+                    android:layout_marginBottom="@dimen/_9sdp"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/yes_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/action_dialog_yes"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Button"
+                    android:textSize="@dimen/_12sdp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textColor="@color/colorAccent"
+                    android:gravity="end"
+                    android:layout_marginBottom="@dimen/_9sdp"
+                    android:layout_marginLeft="@dimen/_30sdp"
+                    android:layout_marginRight="@dimen/_9sdp"
+                    android:layout_marginStart="@dimen/_30sdp"
+                    android:layout_marginEnd="@dimen/_9sdp" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.cardview.widget.CardView>
+
+</layout>

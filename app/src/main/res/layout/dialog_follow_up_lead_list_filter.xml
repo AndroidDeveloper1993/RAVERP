@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_200sdp"
+        android:layout_gravity="center"
+        style="@style/DialogCardViewStyle"
+        app:cardUseCompatPadding="false"
+        app:cardPreventCornerOverlap="false">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/_7sdp"
+            android:paddingRight="@dimen/_7sdp">
+
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edit_requester_name"
+                style="@style/EditTextStyle"
+                android:layout_marginTop="@dimen/_14sdp"
+                android:hint="Requester Name"
+                android:imeOptions="actionDone" />
+
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_50sdp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_30sdp"
+                    android:background="#6f42c1"
+                    android:fontFamily="@font/googlesans_medium"
+                    android:textAllCaps="false"
+                    android:drawableLeft="@drawable/ic_baseline_search_24"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:paddingRight="@dimen/_20sdp"
+                    android:text="Go"
+                    android:id="@+id/btn_go"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_10sdp" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:background="#dc3545"
+                    android:fontFamily="@font/googlesans_medium"
+                    android:text="Clear"
+                    android:textAllCaps="false"
+                    android:id="@+id/btn_clear"
+                    android:textColor="@color/white"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:paddingRight="@dimen/_20sdp"
+                    android:drawableLeft="@drawable/ic_baseline_clear_24"
+                    android:textSize="@dimen/_10sdp" />
+
+
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.cardview.widget.CardView>
+
+</layout>

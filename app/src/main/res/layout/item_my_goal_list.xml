@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable
+            name="myGoalListModel"
+            type="com.rav.raverp.data.model.api.MyGoalListModel" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/headerLayout"
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#C0C0C0"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/_4sdp"
+                android:paddingRight="@dimen/_4sdp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/_2sdp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:gravity="center"
+                    android:paddingTop="@dimen/_9sdp"
+                    android:paddingBottom="@dimen/_9sdp"
+                    android:text="Sr. No."
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp" />
+
+                <View
+                    android:layout_width="@dimen/_1sdp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/_9sdp"
+                    android:layout_marginBottom="@dimen/_9sdp"
+                    android:background="@color/background" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_2sdp"
+                    android:layout_marginRight="@dimen/_2sdp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:gravity="center"
+                    android:paddingTop="@dimen/_9sdp"
+                    android:paddingBottom="@dimen/_9sdp"
+                    android:text="My Goal"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp" />
+
+                <View
+                    android:layout_width="@dimen/_1sdp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/_9sdp"
+                    android:layout_marginBottom="@dimen/_9sdp"
+                    android:background="@color/background" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_2sdp"
+                    android:layout_marginRight="@dimen/_2sdp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:gravity="center"
+                    android:paddingTop="@dimen/_9sdp"
+                    android:paddingBottom="@dimen/_9sdp"
+                    android:text="Start Date"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp" />
+
+                <View
+                    android:layout_width="@dimen/_1sdp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/_9sdp"
+                    android:layout_marginBottom="@dimen/_9sdp"
+                    android:background="@color/background" />
+
+
+
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_2sdp"
+                    android:layout_marginRight="@dimen/_2sdp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:gravity="center"
+                    android:paddingTop="@dimen/_9sdp"
+                    android:paddingBottom="@dimen/_9sdp"
+                    android:text="End Date"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp" />
+                <View
+                    android:layout_width="@dimen/_1sdp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/_9sdp"
+                    android:layout_marginBottom="@dimen/_9sdp"
+                    android:background="@color/background" />
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_2sdp"
+                    android:layout_marginRight="@dimen/_2sdp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:gravity="center"
+                    android:paddingTop="@dimen/_9sdp"
+                    android:paddingBottom="@dimen/_9sdp"
+                    android:text="Goal Image"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp" />
+                <View
+                    android:layout_width="@dimen/_1sdp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/_9sdp"
+                    android:layout_marginBottom="@dimen/_9sdp"
+                    android:background="@color/background" />
+
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/contentLayout"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/_4sdp"
+                android:paddingRight="@dimen/_4sdp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/sno"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/_2sdp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:gravity="center"
+                    android:paddingTop="@dimen/_9sdp"
+                    android:paddingBottom="@dimen/_9sdp"
+                    android:text="Sr. No."
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textSize="@dimen/_12sdp" />
+
+                <View
+                    android:layout_width="@dimen/_1sdp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/_9sdp"
+                    android:layout_marginBottom="@dimen/_9sdp"
+                    android:background="@color/background" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_2sdp"
+                    android:layout_marginRight="@dimen/_2sdp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:gravity="center"
+                    android:paddingTop="@dimen/_9sdp"
+                    android:paddingBottom="@dimen/_9sdp"
+                    android:text="@{myGoalListModel.strMyGoal}"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textSize="@dimen/_12sdp"
+                    tools:text="My Goal" />
+
+                <View
+                    android:layout_width="@dimen/_1sdp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/_9sdp"
+                    android:layout_marginBottom="@dimen/_9sdp"
+                    android:background="@color/background" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_2sdp"
+                    android:layout_marginRight="@dimen/_2sdp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:gravity="center"
+                    android:paddingTop="@dimen/_9sdp"
+                    android:paddingBottom="@dimen/_9sdp"
+                    android:text="@{myGoalListModel.dtGoalStartDate}"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textSize="@dimen/_12sdp"
+                    tools:text="Start Date" />
+
+                <View
+                    android:layout_width="@dimen/_1sdp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/_9sdp"
+                    android:layout_marginBottom="@dimen/_9sdp"
+                    android:background="@color/background" />
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_2sdp"
+                    android:layout_marginRight="@dimen/_2sdp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:gravity="center"
+                    android:paddingTop="@dimen/_9sdp"
+                    android:paddingBottom="@dimen/_9sdp"
+                    android:text="@{myGoalListModel.dtGoalEndDate}"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textSize="@dimen/_12sdp"
+                    tools:text="End Date" />
+
+                <View
+                    android:layout_width="@dimen/_1sdp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/_9sdp"
+                    android:layout_marginBottom="@dimen/_9sdp"
+                    android:background="@color/background" />
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/cross"
+                    app:imageUrls="@{myGoalListModel.imageUrl}" />
+
+
+
+
+               <!-- <LinearLayout
+                    android:layout_width="@dimen/_70sdp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:weightSum="10">
+
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_weight="4"
+                        android:src="@drawable/ic_pencil" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="20dp"
+                        android:layout_weight="2" />
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_weight="4"
+                        android:src="@drawable/ic_baseline_delete_24" />
+
+                </LinearLayout>-->
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:background="@color/background" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+</layout>

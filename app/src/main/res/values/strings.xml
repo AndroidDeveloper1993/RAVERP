@@ -1,0 +1,111 @@
+<resources>
+    <string name="app_name">RAV</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_desc">Navigation header</string>
+
+
+    <!--internet msg-->
+    <string name="need_permission">Need Permission</string>
+    <string name="goto_settings">Goto Settings</string>
+    <string name="action_cancel">Cancel</string>
+    <string name="go_to_settings_give_permissions">This app needs permission to access your storage and location.
+        Go to Settings and Grant the permissions to use these features.</string>
+    <string name="action_allow">ALLOW</string>
+    <string name="api_retry_error">Please retry!</string>
+    <string name="api_default_error">Something wrong happened!</string>
+    <string name="something_wrong">Something went wrong!\nPlease try again.</string>
+    <string name="some_error">Some Error Occurred!</string>
+    <string name="connection_error">You have lost connection to the Internet. This app is offline.</string>
+    <string name="msg_no_internet">No Internet Connection !</string>
+    <string name="msg_not_detected_internet">This app is offline. We can not detect any internet connectivity.
+        Please check your internet connection and try again.</string>
+    <string name="label_retry">Retry</string>
+    <string name="default_notification_channel_id" translatable="false">fcm_default_channel</string>
+    <string name="fcm_message">FCM Message</string>
+    <string name="allow_storage_permission">Allow Storage Access</string>
+    <string name="msg_storage_permission_denied_explanation">Storage permission is required to access images and pdf files,
+        which are used in rav  Mobile App, to your device. If you don\'t allow Rav  to access your storage,
+        you will not be able to see images on the app. \n\nWould you like to allow us to access your storage?</string>
+
+
+    <string name="error_field_required">This field is required</string>
+    <string name="error_password_required">Please Enter Password</string>
+
+
+    <string name="action_show_more">Show More</string>
+
+    <!--Error Dialog-->
+    <string name="label_error">Error</string>
+    <string name="action_try_again">Try Again</string>
+
+    <!--Success Dialog-->
+    <string name="label_success">Success</string>
+    <string name="msg_sign_up_success">Congratulations! Your account has been created successfully.
+        You can now login.</string>
+    <string name="action_continue">OK</string>
+
+    <!--Logout Dialog-->
+    <!--Logout Dialog-->
+    <string name="action_dialog_yes">YES</string>
+    <string name="action_dialog_no">NO</string>
+    <string name="msg_dialog_logout">Are you sure you want to logout?</string>
+
+    <!--Review Dialog-->
+    <string name="heading_thank_you">Thank You</string>
+    <string name="action_done">Done</string>
+    <string name="dialog_action_ok">ओके</string>
+
+    <!--Login Activity-->
+    <string name="title_activity_login">Sign in</string>
+    <string name="prompt_user_id">User Id</string>
+    <string name="prompt_registered_mobile_number">Enter your Login Id</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_forgot_password">Forgot password ?</string>
+    <string name="action_login">Login</string>
+    <string name="error_password_mismatching">New Password &amp; Retyped New Password must be same.</string>
+    <string name="invalid_password">Password must contain at least 6 digits.</string>
+    <string name="action_filter">Filter</string>
+
+    <string name="welcome">"Welcome ! "</string>
+
+
+    <string name="login_failed">"Login failed"</string>
+    <string name="title_login_now">Welcome !</string>
+    <string name="error_registered_phone_required">Enter your Login Id </string>
+    <string name="error_invalid_phone">Please Valid Login Id </string>
+
+
+    <string name="msg_login">Log in</string>
+    <string name="label_enter_via_social_networks">Enter via social networks</string>
+    <string name="label_login_with_email">or login with email</string>
+    <string name="label_don_t_have_an_account">Don\'t have an account?</string>
+    <string name="error_credentials">"Please give your inputs."</string>
+    <string name="msg_user_not_exist">You\'re not an authorized user.
+        Please sign up to continue in this application.</string>
+    <string name="msg_you_dont_have_access">You don\'t have currently access to this app.
+        Please contact your account administrator for access.</string>
+    <string name="title_not_authorized">Not Authorized</string>
+    <string name="Please_Enter_Valid_Email_ID">Please Enter Valid Email ID</string>
+    <string name="Please_Enter_Valid_Mobile_No">Please Enter 10 digits Mobile No.</string>
+
+    <string-array name="select_district_array">
+
+    </string-array>
+    <string-array name="select_array" />
+
+    <string name="action_change_password">Change Password</string>
+
+    <string name="error_choose_another_file">Sorry! We are facing some issues with this file format. Please select another file.</string>
+
+    <string name="title_activity_main">Dash</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="No_Record_Available">No Record Available.</string>
+
+
+    <string name="label_followup_date">FollowUp Date :<font color='#FF0000'>*</font></string>
+</resources>

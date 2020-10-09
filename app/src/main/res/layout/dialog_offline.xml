@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        style="@style/CardViewDashboardWhite">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:padding="@dimen/_9sdp"
+                android:text="@string/msg_no_internet"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_16sdp"
+                card_view:fontFamily="@font/poppins_medium" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black_700"
+                android:textSize="@dimen/_12sdp"
+                android:text="@string/msg_not_detected_internet"
+                android:paddingTop="@dimen/_13sdp"
+                android:paddingBottom="@dimen/_14sdp"
+                android:paddingRight="@dimen/_14sdp"
+                android:paddingLeft="@dimen/_14sdp"
+                android:gravity="center"
+                android:lineSpacingExtra="@dimen/_4sdp"
+                android:fontFamily="@font/poppins_regular"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:background="@color/divider"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/retry_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black_900"
+                android:textSize="@dimen/_14sdp"
+                android:text="@string/label_retry"
+                android:gravity="center"
+                android:background="@color/white"
+                android:textAllCaps="false"
+                android:fontFamily="@font/poppins_medium" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.cardview.widget.CardView>
+
+</layout>
+
+
+
